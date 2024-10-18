@@ -11,3 +11,37 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+
+/* <Layout style={{ minHeight: '100vh' }}>
+      <Header style={{ backgroundColor: '#1890ff', padding: '0 20px' }}>
+        <h1 style={{ color: '#fff', textAlign: 'center' }}>Posts App using Supabase</h1>
+      </Header>
+      <Content style={{ padding: '20px 50px', backgroundColor: 'yellowgreen' }}>
+        {!user ? (
+          <AuthButtons onLogin={loginWithGoogle} />
+        ) : (
+          <>
+            <Space direction="horizontal" align="center" style={{ marginBottom: 20 }}>
+              <Avatar icon={<UserOutlined />} />
+              <span>Welcome, {user.email}</span>
+              <span>
+                <Button
+                  type="default"
+                  icon={<LogoutOutlined />}
+                  onClick={logout}
+                >
+                  Logout
+                </Button>
+              </span>
+            </Space>
+            <PostForm user={user} onPostCreated={fetchPosts} />
+            <h2>All Posts</h2>
+            <PostList posts={posts} onFetchPosts={fetchPosts} />
+          </>
+        )}
+      </Content>
+      <Footer style={{ textAlign: 'center' }}>
+        Supabase Posts App ©2024 Created by Sooraj Ydv
+      </Footer>
+    </Layout> */
